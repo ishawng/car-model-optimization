@@ -17,7 +17,7 @@ The process of finding the Pareto optimal cars is essentially the same for both 
     - We will begin by calculating the averages of the parents' attributes.
     - We will loop through every entry in the dataset and find the two that have attributes that most closely match the parents' average attributes.
         - We can determine how closely an entry matches the parents' averages by calculating the sum of the squared differences of each attribute.
-        - The sum of squared differences is simply $$\sum_{i=0}^{n}{(a_n - \bar{a}_n)^2}$$ where $$a$$ is the entry's attribute, $$\bar{a}$$ is the parents' average attribute, and $$n$$ is the number of attributes being optimized.
+        - The sum of squared differences is simply ![formula](https://render.githubusercontent.com/render/math?math=\sum_{i=0}^{n}(a_i-\bar{a}_i)^2) where ![formula](https://render.githubusercontent.com/render/math?math=a) is the entry's attribute, ![formula](https://render.githubusercontent.com/render/math?math=\bar{a}) is the parents' average attribute, and ![formula](https://render.githubusercontent.com/render/math?math=n) is the number of attributes being optimized.
     - Finally, we will replace the parents' attributes with the two closest entries' attributes.
 3. Mutating Individuals
     - The mutation process is simple.
